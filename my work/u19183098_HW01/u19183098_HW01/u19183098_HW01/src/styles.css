@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+ .card{
+    margin: 0.5%;
+    box-shadow: 0 0 5px darkolivegreen;
+    
+} 
+
+.divClass {
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: auto;
+    background-color: lightgray;
+    padding: 40px;
+}
+
+/* #inputbox {
+ 
+}
+
+ #inputlabel {
+
+ } */
+
+ #formmessage {
+     font-size: x-small;
+ }
+
+ .alert{
+     color: red;
+ }
+
+ #filelabel{
+     text-align: center;
+ }

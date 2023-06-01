@@ -1,0 +1,32 @@
+<div class="divClass">
+    <form class="form-group">
+        <div>
+
+            <h3 *ngIf="this.img.length==0" id="filelabel"><b>Select Files</b></h3>
+            <h3 *ngIf="this.img.length==1" id="filelabel"><b>Select Files</b></h3>
+            <h3 *ngIf="this.img.length==2" id="filelabel"><b>Replace file</b></h3>
+            <br>
+
+            <input type="file" multiple accept="image/*" class="form-control" (change)="Images($event)">
+            <br>
+
+            <h3 *ngIf="this.img.length==1" id="filelabel"><b>Chosen Files:</b></h3>
+            <h3 *ngIf="this.img.length==2" id="filelabel"><b>Chosen Files:</b></h3>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div *ngFor="let item of img" class="col-lg-6">
+                        <div class="card">
+                            <img class="card-img-top" src="{{ item.location }}">
+                            <div class="card-body">
+                                <h5>{{item.name}}</h5>
+                                <h5>Uploaded at: {{item.date}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </form>
+</div>
